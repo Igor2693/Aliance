@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.header {
+  max-width: 1920px;
+  margin: auto;
+  background-color: rgb(88, 88, 88);
+}
+.logo-light {
+  padding: 25px 50px;
+  border-right: 1px solid black;
+}
+.nav {
+  height: 94px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-nav {
+  margin-right: auto;
+}
+.nav-item {
+  color: rgb(255, 255, 255);
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+  text-decoration: none;
+  margin-left: 50px;
+}
+.nav-item:hover {
+  text-decoration: underline;
+  
+}
+.header-contact {
+  display: flex;
+  align-items: center;
+}
+.tel {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+  font-family: Noto Sans;
+  margin-left: 10px;
+}
+.header-button {
+  background: rgb(92, 142, 230);
+  color: rgb(255, 255, 255);
+  font-family: Noto Sans;
+  font-size: 16px;
+  height: 100%;
+  padding: 34px 50px;
+  margin-left: 50px;
+  border: none;
+}
+.header-button:hover {
+  cursor: pointer;
+}
