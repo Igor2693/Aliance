@@ -1,6 +1,12 @@
 * {
   box-sizing: border-box;
 }
+@font-face {
+  font-family: 'Bebas Neue Regular';
+  src: url('/fonts/BebasNeueRegular.woff') format('woff'),
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   font-family: "Noto Sans", sans-serif;
   font-weight: 400;
@@ -9,17 +15,30 @@ body {
 .header {
   max-width: 1920px;
   margin: auto;
-  background-color: rgb(88, 88, 88);
+  background-image: url(/img/bg-main.png);
+  background-repeat: no-repeat;
+  /* min-height: 100vh; */
+  position: relative;
+}
+.shadow {
+  background: rgba(41, 45, 51, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
 }
 .logo-light {
   padding: 25px 50px;
   border-right: 1px solid rgba(235, 235, 240, 0.2);
+  height: 100%;
 }
 .nav {
   height: 94px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid rgba(235, 235, 240, 0.2);
+  position: relative;
 }
 .header-nav {
   margin-right: auto;
@@ -60,4 +79,74 @@ body {
 }
 .header-button:hover {
   cursor: pointer;
+}
+
+.main {
+  margin-top: 150px;
+  margin-left: 240px;
+  position: relative;
+}
+.main-info {
+  width: 1200px;
+}
+.main-rectangle {
+  width: 150px;
+  border: 1px solid rgb(92, 142, 230);
+}
+.main-title {
+  color: #FFFFFF;
+  font-family: 'Bebas Neue Regular';
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 96px; 
+  margin: 0;
+}
+.main-subtitle {
+  width: 720px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+  margin-top: 30px;
+}
+.main-button {
+  background: rgb(92, 142, 230);
+  padding: 25px 60px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25.6px;
+  border: none;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.main-button:hover {
+  cursor: pointer;
+}
+.icons-block {
+  display: flex;
+}
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 288px;
+  height: 168px;
+  padding-top: 30px;
+  padding-left: 50px;
+  border-top: 1px solid rgba(235, 235, 240, 0.2);
+  border-right: 1px solid rgba(235, 235, 240, 0.2);
+}
+.icon-item:first-child {
+  border-left: 1px solid rgba(235, 235, 240, 0.2);
+}
+.icon-text {
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 25.6px;
+}
+.main-icon {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 20px;
 }
