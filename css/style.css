@@ -87,7 +87,7 @@ body {
 .main-info {
   width: 1200px;
 }
-.main-rectangle {
+.rectangle {
   width: 150px;
   border: 1px solid rgb(92, 142, 230);
 }
@@ -148,3 +148,63 @@ body {
   height: 36px;
   margin-bottom: 20px;
 }
+
+.section {
+  max-width: 1440px;
+  margin:auto;
+}
+.step {
+  margin-top: 150px;
+}
+.step-card {
+  width: 330px;
+}
+.step-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 150px;
+}
+.title-step {
+  font-family: 'Bebas Neue Regular';
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 72px;
+
+}
+.number {
+  font-family: 'Bebas Neue Regular';
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 57.6px;
+ color: #5C8EE5;
+}
+.card-title {
+  font-size: 28px;
+  line-height: 44.8px;
+  font-weight: 400;
+}
+.card-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25.6px;
+  color: #828A99;
+}
+
+
+.card-link {
+  display: flex;
+  align-items: center;
+  color: #5C8EE5;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25.6px;
+  text-decoration: none;
+}
+.card-link::before {
+  content: "";
+  width: 40px;
+  height: 1px;
+  background: #5C8EE5;
+  margin-right: 20px;
+}
+
