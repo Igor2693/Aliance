@@ -1,8 +1,8 @@
 const nav = document.querySelector('.nav');
 window.addEventListener('scroll', () => {
   if (this.scrollY > 1) {
-    console.log('покрутили вниз')
+    nav.classList.add("nav-light");
   } else {
-    console.log('нет прокрутики')
+    nav.classList.remove("nav-light");
   }
 })

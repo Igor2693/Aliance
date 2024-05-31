@@ -25,7 +25,7 @@ body {
   position: absolute;
   z-index: 0;
 }
-.logo-light {
+.logo-link {
   padding: 25px 50px;
   border-right: 1px solid rgba(235, 235, 240, 0.2);
   height: 100%;
@@ -40,13 +40,22 @@ body {
   position: fixed;
   top: 0;
   z-index: 2;
-  
+  color: rgb(255, 255, 255);
+  transition: background-color 0.4s;
+}
+.nav-light {
+  background: rgb(250, 251, 252);
+  color: rgb(41, 45, 51);
+}
+.nav-light .header-logo-path {
+  fill: rgb(41, 45, 51);
 }
 .header-nav {
   margin-right: auto;
 }
 .nav-item {
-  color: rgb(255, 255, 255);
+  /* color: rgb(255, 255, 255); */
+  color: inherit;
   font-size: 16px;
   font-weight: 400;
   line-height: 160%;
@@ -57,12 +66,15 @@ body {
   text-decoration: underline;
   
 }
+.header-nav {
+  color: inherit;
+}
 .header-contact {
   display: flex;
   align-items: center;
 }
 .tel {
-  color: rgb(255, 255, 255);
+  color: inherit;
   text-decoration: none;
   font-size: 16px;
   font-weight: 400;
